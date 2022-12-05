@@ -1,3 +1,5 @@
+package day4
+
 fun countPairWithOneFullyContainedInAnother(pairs: List<String>): Int = pairs.count { pair ->
     val matches = getNumbers(pair)
     val range1 = (matches[0] .. matches[1]).toSet()

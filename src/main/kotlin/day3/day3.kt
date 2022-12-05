@@ -1,3 +1,5 @@
+package day3
+
 fun sumOfItemsThatAreInBothHalfs(sacks: List<String>): Int = sacks.map { sack ->
     sack.firstHalf() intersect sack.lastHalf()
 }.flatten().sumOf { it.priority }

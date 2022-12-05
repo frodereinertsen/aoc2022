@@ -1,5 +1,8 @@
+package day2
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import readLines
 
 internal class Day2Test {
     private val exampleInput = """

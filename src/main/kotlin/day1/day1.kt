@@ -1,3 +1,4 @@
+package day1
 fun chunkByElf(lines: List<String>): Sequence<List<Int>> = sequence {
     val currentElf = mutableListOf<Int>()
     for (line in lines) {
