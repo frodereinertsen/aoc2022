@@ -1,4 +1,7 @@
 object A
 
 fun readLines(fileName: String): List<String> =
-    A::class.java.classLoader.getResource("${fileName}").readText().lines().dropLastWhile { it.isEmpty() }
+    readFile(fileName).lines().dropLastWhile { it.isEmpty() }
+
+fun readFile(fileName: String): String =
+    A::class.java.classLoader.getResource(fileName).readText()
